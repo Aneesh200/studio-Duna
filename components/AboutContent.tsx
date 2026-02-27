@@ -3,12 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const HERO_IMAGE =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuBzwSNbK1tKxee2q4vdTlbMmqDxzOIjwX-JTxFcfE7Out6Y30cmk5uwzNFrZETNJAWioG1BOhZ7-zzV6olGMo2PYaY3VqzRMduF9ws-YFu7ODMTOjalR45R2EDV0vYvXuni6qMaeToBOkdK4IT4QYZQB1zPYV5qHdmMF82TPk4iq_JhQEEu9hB2SD86Nsi6kCJkv0njInDc11GM8-XDLerqxJPHhn1yAOqkaOWjE67Nzju9q5GqiB2vHtaaTuU_YPctFGh3oYu0Pnor";
-const TEXTURE_IMAGE =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuCqRwsbX2Nu8bhrwCqFAZMR7ye5TUWY_WVD94_PamCyneVOCwx8S7JjlJcPO-4B3XLMBLKER-jcxpqAJxa3Vy1PTbsvEh7lf1DEnlvlshWmHTpZQeMNv5Dry6iR_3nwh9b1tO-KTw4XI2YuREuBfD9DlxdLc_-ZNhp9L3mfyU65fjZgvG64XYl7PR1Bch5Y23aSy8NXnvErmyly89uK6qh0GNk1QDMZrUHGlz2VivzOwerOu3z-Gwdbr-AWTf1C64yfZpCSnlNj9vdZ";
-const QUOTE_IMAGE =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuB4a6vIv7olEFwOCg_raEMhH-s4AztEeXdECsUWVd4N6AZTO4G6Xldm32V-Wpo5yvbkQ8Zh1618lcg5kq7sVOypR9zYbGq-cNj7oZCfIs4bVmoOGt6A3x8SZIeLXlcPh048tYYAhFRU_PR3H6SJnzWoHnrGNNqeuYoUXeSONrVgs9R3vl8z0T2aSHae8CUMIDnWo8AQBFi6VIXMgjVooRC-7rsJ89o4WD2eGu2QBms9Dj9_oCxC6R63eEQUc2wgcCyf99x2thEJVi7N";
+const HERO_IMAGE = "/images/duna-4.png";
+const TEXTURE_IMAGE = "/images/duna-9.png";
+const QUOTE_IMAGE = "/images/duna-5.png";
 
 const TEAM = [
   {

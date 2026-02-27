@@ -12,8 +12,7 @@ const PROJECTS = [
     country: "Greece",
     tag: "Cycladic Modernism",
     code: "GR",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDtQI0a2PhYK8P1nS1bJ7I9l4USO37oKeI2Yo6tSgpXlPEU8Gd6DW7Fzwce7wy2H2Rmbb477ryT22CeEJWcRaHg9dkvLwyG6dyZIOSL-78a0d5Ls1aII-oMIVA9QADF-CdAh87FLULzj1YxYwBC3lo83qB0XcOFg-7tTQPqC8HeIpgdtA9n-R4magvveBKEh1Uz2AtW4l4mRKwRA0-lOQOenV1PwZc1y1X4y-HbdQb6gNbZZbX8fzj_b3GVsRgffSPyuYbba59ryFPg",
+    image: "/images/duna-1.png",
     year: "2023",
     type: "Residential",
     title: "Villa Eos",
@@ -29,8 +28,7 @@ const PROJECTS = [
     country: "Italy",
     tag: "Historic Preservation",
     code: "IT",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBDo0vZRlJU-II4ivrG5-j2ZB6_CFW0jqtbctfYW3HKmuGqXQyDG3F-4I1_Ds_cQghq17vAI-B_0cfcpnrWswbT0fmztwQni9K5YzMvwBHgecEIyiUsQFyakAhQddRRA2k4RLVtMQ9KRsE15IOKelWKVqlFYo4dXSFqT22hhX6zCHwxm4Qf6NyfrpsQ5saQNO0kFECqlRmUdQHiZhLIAE7sukQwdvuU2JL1tMyWNCYNTvdoZDJO0kI9DMvMb2GarpTw8KU_Jc52UqdM",
+    image: "/images/duna-5.png",
     year: "2022",
     type: "Restoration",
     title: "Arch House",
@@ -46,8 +44,7 @@ const PROJECTS = [
     country: "UAE",
     tag: "",
     code: "",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCApuCYuvgTuVS2fFWA5tyDHUNTjbA0yuU3qAIn8Sf0cpQ22TTSNVxqxD3EnfvTjlCyj3BHo8f6EyeQNmaIpJ_Id_0GSPc2pw2-nYua5wezChpHA8GmMRxz8z-GVhpayElfaPd-2d8pTzhyLbnxw7k4foKQxdNOeBHd62Fb-BFmjV1C4HRQWc9c2UesmdAvyGA06zrgFBSqGDPxpH0KbxE1koPzURFvcyB90ovLJJ9w3iiZp2DwTCDggu3f-ftrqs5XFmB-MW29AVAM",
+    image: "/images/duna-3.png",
     year: "",
     type: "",
     title: "Dune Retreat",
@@ -63,8 +60,7 @@ const PROJECTS = [
     country: "Mexico",
     tag: "",
     code: "",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuC-jGpVpX5HFI1iRBzJILky-y4E1bpXEYX1gAinAZw9v8kEUbAQRW15Kjs8xUBvdlzuh7WRGDCsW_SGiYeF1ydzKbQFwFMVgp40szFNwN9sFZhHdC17v4m9pRNgtIQ-ICLOZ5RWj-EYeF0EHOanRJko0gmOpybh4zVi1Kju3CRzwPJPhgyVtv079H9cRSZmnmMrWSyZmxXt-0Om2T3ONhsXrpenUoCafrKF38gpYAVs21kqFK6OuCMaXuO7LiZu3lmkf2_rX18_m0nG",
+    image: "/images/duna-2.png",
     year: "",
     type: "",
     title: "Casa Arena",
@@ -81,8 +77,7 @@ const PROJECTS = [
     country: "Japan",
     tag: "",
     code: "",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDE-ktWGq6Jsjr-bOqaReTb-VwVcrBe-H3EeQvefJDMOSwJVZiIR7hS6itI1OC85ljyDnauisConRfLu1i2O1m6e5sKigZMSWR26heJZJLHa7o1SEbmMfrXvEKsOYV0xOSuoRuvWoDA5Mf2RZdd4vrxlM9vAj5ibeDDV16q-4DAYquzm_gCJddG6hwFkEwmLW1sJUW-WuTub8u0h-_2McnJ5sirKw0eYnLgXReZg4LF8qj0g4UWJMx82Wuy0IeIsVuRvfsLgHo3KUl4",
+    image: "/images/duna-6.png",
     year: "",
     type: "",
     title: "Stone Sanctuary",
@@ -97,8 +92,7 @@ const PROJECTS = [
     country: "Denmark",
     tag: "",
     code: "",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBkYBOet83EH2yCukxJPq4SjPtllXkYUO6yKKmTh5CCUP14gh_JdaBP3VucSxmXzywxztMNbVqEfUgS19Lg17e3BKMqmrigm2xb-I4jhA5DRdMtqtpBm39Au3ak4tAijhfOfepbpAd6DwLa8RgakceCRD4ft-wUep4Y-Vm3Cs5-ua54yneutm3GZUl9haw1SiUUFR_cvSwJxyaUEX3Pp8bCeG-DFLsEo6psvWvqHxvKw7T6jKjtq1kMOf0sQ9dGkvO8RKbqNDLrPep6",
+    image: "/images/duna-7.png",
     year: "",
     type: "",
     title: "Light Pavilion",
@@ -477,7 +471,7 @@ export default function StudioContent() {
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <Image
             alt="texture"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDo0vZRlJU-II4ivrG5-j2ZB6_CFW0jqtbctfYW3HKmuGqXQyDG3F-4I1_Ds_cQghq17vAI-B_0cfcpnrWswbT0fmztwQni9K5YzMvwBHgecEIyiUsQFyakAhQddRRA2k4RLVtMQ9KRsE15IOKelWKVqlFYo4dXSFqT22hhX6zCHwxm4Qf6NyfrpsQ5saQNO0kFECqlRmUdQHiZhLIAE7sukQwdvuU2JL1tMyWNCYNTvdoZDJO0kI9DMvMb2GarpTw8KU_Jc52UqdM"
+            src="/images/duna-9.png"
             fill
             className="object-cover grayscale"
           />

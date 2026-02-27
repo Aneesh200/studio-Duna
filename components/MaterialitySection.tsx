@@ -1,12 +1,9 @@
 import Image from "next/image";
 import RevealOnScroll from "./RevealOnScroll";
 
-const TEXTURE_IMAGE =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuBkYBOet83EH2yCukxJPq4SjPtllXkYUO6yKKmTh5CCUP14gh_JdaBP3VucSxmXzywxztMNbVqEfUgS19Lg17e3BKMqmrigm2xb-I4jhA5DRdMtqtpBm39Au3ak4tAijhfOfepbpAd6DwLa8RgakceCRD4ft-wUep4Y-Vm3Cs5-ua54yneutm3GZUl9haw1SiUUFR_cvSwJxyaUEX3Pp8bCeG-DFLsEo6psvWvqHxvKw7T6jKjtq1kMOf0sQ9dGkvO8RKbqNDLrPep6";
-const ARCH_IMAGE =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuDE-ktWGq6Jsjr-bOqaReTb-VwVcrBe-H3EeQvefJDMOSwJVZiIR7hS6itI1OC85ljyDnauisConRfLu1i2O1m6e5sKigZMSWR26heJZJLHa7o1SEbmMfrXvEKsOYV0xOSuoRuvWoDA5Mf2RZdd4vrxlM9vAj5ibeDDV16q-4DAYquzm_gCJddG6hwFkEwmLW1sJUW-WuTub8u0h-_2McnJ5sirKw0eYnLgXReZg4LF8qj0g4UWJMx82Wuy0IeIsVuRvfsLgHo3KUl4";
-const DECOR_IMAGE =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuCApuCYuvgTuVS2fFWA5tyDHUNTjbA0yuU3qAIn8Sf0cpQ22TTSNVxqxD3EnfvTjlCyj3BHo8f6EyeQNmaIpJ_Id_0GSPc2pw2-nYua5wezChpHA8GmMRxz8z-GVhpayElfaPd-2d8pTzhyLbnxw7k4foKQxdNOeBHd62Fb-BFmjV1C4HRQWc9c2UesmdAvyGA06zrgFBSqGDPxpH0KbxE1koPzURFvcyB90ovLJJ9w3iiZp2DwTCDggu3f-ftrqs5XFmB-MW29AVAM";
+const TEXTURE_IMAGE = "/images/duna-2.png";
+const ARCH_IMAGE = "/images/duna-3.png";
+const DECOR_IMAGE = "/images/duna-1.png";
 
 export default function MaterialitySection() {
   return (
