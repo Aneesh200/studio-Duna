@@ -70,9 +70,9 @@ export default function ContactContent() {
                   Studio
                 </span>
                 <p className="text-text-main leading-relaxed font-light">
-                  Via della Scala 12
+                  Kondapur
                   <br />
-                  50123 Florence, Italy
+                  Hyderabad
                 </p>
               </div>
               <div>
