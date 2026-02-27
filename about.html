@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Duna Architects - Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;family=Montserrat:wght@200;300;400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#a88b7d", 
+                        "background-light": "#f4f1ea", 
+                        "background-dark": "#1a1816", 
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#2a2725",
+                        "text-main-light": "#2d2a26",
+                        "text-main-dark": "#e6e1db",
+                        "text-muted-light": "#6b655f",
+                        "text-muted-dark": "#a39e99",
+                    },
+                    fontFamily: {
+                        display: ["'Cormorant Garamond'", "serif"],
+                        sans: ["'Montserrat'", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                    },
+                    height: {
+                        '128': '32rem',
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 1s ease-out forwards',
+                        'fade-in': 'fadeIn 1.5s ease-out forwards',
+                        'slow-zoom': 'slowZoom 20s linear infinite alternate',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slowZoom: {
+                            '0%': { transform: 'scale(1)' },
+                            '100%': { transform: 'scale(1.1)' },
+                        }
+                    }
+                },
+            },
+        };
+    </script>
+<style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #a88b7d;
+            border-radius: 4px;
+        }
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-main-light dark:text-text-main-dark font-sans transition-colors duration-500">
+<nav class="fixed w-full z-50 top-0 left-0 px-8 py-6 flex justify-between items-center mix-blend-difference text-white dark:mix-blend-normal dark:text-text-main-dark transition-all duration-300">
+<div class="hidden md:flex space-x-12 text-sm tracking-widest uppercase font-light opacity-0 animate-fade-in" style="animation-delay: 0.5s;">
+<a class="hover:text-primary transition-colors" href="#">Projects</a>
+<a class="text-primary transition-colors border-b border-primary" href="#">Studio</a>
+</div>
+<a class="absolute left-1/2 transform -translate-x-1/2" href="#">
+<h1 class="font-display text-4xl tracking-widest uppercase font-normal opacity-0 animate-fade-in" style="animation-delay: 0.2s;">
+                Duna
+            </h1>
+</a>
+<div class="flex items-center space-x-8 opacity-0 animate-fade-in" style="animation-delay: 0.5s;">
+<a class="hidden md:block text-sm tracking-widest uppercase font-light hover:text-primary transition-colors" href="#">Contact</a>
+<button class="focus:outline-none">
+<span class="material-symbols-outlined text-3xl font-light">menu</span>
+</button>
+<button class="focus:outline-none p-2 rounded-full hover:bg-white/10 dark:hover:bg-white/5 transition-colors" id="theme-toggle">
+<span class="material-symbols-outlined text-xl dark:hidden">dark_mode</span>
+<span class="material-symbols-outlined text-xl hidden dark:block">light_mode</span>
+</button>
+</div>
+</nav>
+<header class="relative h-[90vh] w-full overflow-hidden flex flex-col items-center justify-center">
+<div class="absolute inset-0 z-0">
+<img alt="Artistic portrait of Duna founders in a minimalist architectural setting" class="w-full h-full object-cover animate-slow-zoom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzwSNbK1tKxee2q4vdTlbMmqDxzOIjwX-JTxFcfE7Out6Y30cmk5uwzNFrZETNJAWioG1BOhZ7-zzV6olGMo2PYaY3VqzRMduF9ws-YFu7ODMTOjalR45R2EDV0vYvXuni6qMaeToBOkdK4IT4QYZQB1zPYV5qHdmMF82TPk4iq_JhQEEu9hB2SD86Nsi6kCJkv0njInDc11GM8-XDLerqxJPHhn1yAOqkaOWjE67Nzju9q5GqiB2vHtaaTuU_YPctFGh3oYu0Pnor"/>
+<div class="absolute inset-0 bg-black/20 dark:bg-black/40"></div>
+</div>
+<div class="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
+<p class="font-sans text-xs md:text-sm tracking-[0.4em] uppercase mb-6 opacity-0 animate-fade-in-up" style="animation-delay: 0.8s;">The Architects</p>
+<h1 class="font-display text-6xl md:text-8xl lg:text-9xl leading-none font-light opacity-0 animate-fade-in-up" style="animation-delay: 1s;">
+                Origin &amp; <br/><i class="font-serif italic text-primary-light">Vision</i>
+</h1>
+</div>
+<div class="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce opacity-0 animate-fade-in" style="animation-delay: 1.5s;">
+<span class="material-symbols-outlined text-4xl text-white font-thin">keyboard_arrow_down</span>
+</div>
+</header>
+<section class="py-24 md:py-32 px-6 md:px-12 bg-background-light dark:bg-background-dark transition-colors duration-500">
+<div class="max-w-[1400px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-24">
+<div class="md:col-span-4 lg:col-span-3">
+<span class="inline-block w-16 h-[1px] bg-primary mb-6"></span>
+<h2 class="font-display text-4xl md:text-5xl text-text-main-light dark:text-text-main-dark mb-8 leading-tight">
+                        Form, Emotion, <br/>Timeless Aesthetics.
+                    </h2>
+</div>
+<div class="md:col-span-8 lg:col-span-6 space-y-8 text-lg md:text-xl font-light leading-relaxed text-text-muted-light dark:text-text-muted-dark">
+<p>
+<span class="text-text-main-light dark:text-text-main-dark font-normal">Duna was born from a singular obsession:</span> to create spaces that silence the noise of the world. We believe that architecture is not merely about shelter, but about the profound emotional resonance of space.
+                    </p>
+<p>
+                        Our practice is rooted in a deep respect for context. We do not impose; we listen. We listen to the landscape, the light, and the unspoken desires of those who will inhabit our creations. Each project is a dialogue between the raw elements of nature and the refined precision of modern design.
+                    </p>
+<p>
+                        We strip away the non-essential until only the truth of the structure remains. It is in this reduction that we find luxury—not in opulence, but in clarity, in the play of shadows across a limestone wall, and in the seamless transition between inside and out.
+                    </p>
+</div>
+<div class="md:col-span-12 lg:col-span-3 flex flex-col justify-end">
+<div class="relative w-full h-80 overflow-hidden rounded-sm">
+<img alt="Detail of minimalist texture" class="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqRwsbX2Nu8bhrwCqFAZMR7ye5TUWY_WVD94_PamCyneVOCwx8S7JjlJcPO-4B3XLMBLKER-jcxpqAJxa3Vy1PTbsvEh7lf1DEnlvlshWmHTpZQeMNv5Dry6iR_3nwh9b1tO-KTw4XI2YuREuBfD9DlxdLc_-ZNhp9L3mfyU65fjZgvG64XYl7PR1Bch5Y23aSy8NXnvErmyly89uK6qh0GNk1QDMZrUHGlz2VivzOwerOu3z-Gwdbr-AWTf1C64yfZpCSnlNj9vdZ"/>
+</div>
+<p class="mt-4 text-xs uppercase tracking-widest text-text-muted-light dark:text-text-muted-dark text-right">
+                        Texture &amp; Light Study No. 4
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-surface-light dark:bg-surface-dark transition-colors duration-500 overflow-hidden">
+<div class="max-w-[1600px] mx-auto px-6 md:px-12">
+<div class="flex flex-col md:flex-row items-end justify-between mb-16 md:mb-24">
+<h3 class="font-display text-5xl md:text-7xl text-text-main-light dark:text-text-main-dark">The <i class="italic text-primary">Collective</i></h3>
+<p class="max-w-md text-text-muted-light dark:text-text-muted-dark mt-6 md:mt-0 text-sm leading-relaxed">
+                    A multidisciplinary team of architects, interior designers, and artisans united by a shared philosophy of quiet luxury.
+                 </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden aspect-[3/4] mb-6">
+<img alt="Portrait of Elias Thorne" class="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnoGznVH6BOpdBT5FIzn2EvqiNOfgsdIr2vjQ0utEQvjJXI8LxaxJc1dQxylDekU-2g8qnTxtrG_MKDkAF7dDa1-SEwWU_cH_g-yGxgpjeA6nHKZ0_jlZmfjADl3UZ0q6pRRcNwacXxuKS0-v2zCtv12uCs7IMoSq5U3glpX0jI_EXLIa5oIt2HPB9RvWPD_zqHAGW691bwXqmEyYIg4enrQHzitt2DcCYfBmnNbVJQwAx6p86lP-qUrjMe_TlEbPsbXZGV6n1yFO6"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<h4 class="font-display text-2xl text-text-main-light dark:text-text-main-dark group-hover:text-primary transition-colors">Elias Thorne</h4>
+<p class="text-xs tracking-[0.2em] uppercase text-text-muted-light dark:text-text-muted-dark mt-2">Founding Partner</p>
+</div>
+<div class="group cursor-pointer md:mt-16">
+<div class="relative overflow-hidden aspect-[3/4] mb-6">
+<img alt="Portrait of Sarah Jenkins" class="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNTuOfnDahsKf2j4rCA2PkkDUs-AYC-w1m4kh_9VwgKVvJ3B6I7znsijr8vslmRjJwAdjStT3h0ipEmdicAfrsVwhBXXnhQcCJCPvl9whiYIaDseDvPNCtoh7WEBLxN7gYLk_TxJZ-N2wJ-epR99MRxASLcqR832y9OZVGB7xc7i09XfEP_3xKljqSs7G6GiDxIceFmRVWpU2Rk_5mqUqS7bW1yvHZFy0eHfJtnS9YQz7QyInsfxQVWeWfNMCA7JQPJqakSBVEyw0H"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<h4 class="font-display text-2xl text-text-main-light dark:text-text-main-dark group-hover:text-primary transition-colors">Sarah Jenkins</h4>
+<p class="text-xs tracking-[0.2em] uppercase text-text-muted-light dark:text-text-muted-dark mt-2">Design Director</p>
+</div>
+<div class="group cursor-pointer lg:mt-32">
+<div class="relative overflow-hidden aspect-[3/4] mb-6">
+<img alt="Portrait of Julian Vane" class="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPxMWxU_XWHdRy5tGZWzhDTnvu1QSYD9CJ4pw4c_FjOse73jxcCacfUKtzxNErIWh27IpUIU6J_CYhRcy-9JAIKsDiIpP88RnQe0VsgchcU5N_gM4H4Fk-AyhNxrNUa15mjr9yJ0vJRcSdEH0UVH-1bzL03N8ABimE7ydIAovUgISTMDo249i-QL8EGymh5D7p5re2LMK-Le4lBI_c5GBPZ2onSlVkwAmiCPh8vmBjUjP_RiRuXizm4q4E-_4MV5GYzieO3-fDcN1g"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<h4 class="font-display text-2xl text-text-main-light dark:text-text-main-dark group-hover:text-primary transition-colors">Julian Vane</h4>
+<p class="text-xs tracking-[0.2em] uppercase text-text-muted-light dark:text-text-muted-dark mt-2">Lead Architect</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 md:py-32 bg-background-light dark:bg-background-dark text-text-main-light dark:text-text-main-dark">
+<div class="max-w-7xl mx-auto px-6 md:px-12">
+<div class="text-center mb-20">
+<p class="font-sans text-xs tracking-[0.3em] uppercase text-primary mb-4">How we work</p>
+<h3 class="font-display text-4xl md:text-6xl">The Process</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 border-t border-text-muted-light/20 dark:border-text-muted-dark/20 divide-y md:divide-y-0 md:divide-x divide-text-muted-light/20 dark:divide-text-muted-dark/20">
+<div class="p-8 md:p-10 group hover:bg-surface-light dark:hover:bg-surface-dark transition-colors duration-500">
+<div class="w-12 h-12 mb-6 text-primary flex items-center justify-center border border-primary/30 rounded-full group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined font-thin">person_search</span>
+</div>
+<h4 class="font-display text-2xl mb-4 group-hover:translate-x-2 transition-transform duration-300">01. Discovery</h4>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark leading-relaxed font-light">
+                        We begin by understanding the land and the lifestyle. Deep analysis of site conditions and client aspirations forms the foundation.
+                    </p>
+</div>
+<div class="p-8 md:p-10 group hover:bg-surface-light dark:hover:bg-surface-dark transition-colors duration-500">
+<div class="w-12 h-12 mb-6 text-primary flex items-center justify-center border border-primary/30 rounded-full group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined font-thin">architecture</span>
+</div>
+<h4 class="font-display text-2xl mb-4 group-hover:translate-x-2 transition-transform duration-300">02. Concept</h4>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark leading-relaxed font-light">
+                        Sketching initial forms. Exploring volumes, light paths, and material palettes to define the project's soul.
+                    </p>
+</div>
+<div class="p-8 md:p-10 group hover:bg-surface-light dark:hover:bg-surface-dark transition-colors duration-500">
+<div class="w-12 h-12 mb-6 text-primary flex items-center justify-center border border-primary/30 rounded-full group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined font-thin">draw</span>
+</div>
+<h4 class="font-display text-2xl mb-4 group-hover:translate-x-2 transition-transform duration-300">03. Detail</h4>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark leading-relaxed font-light">
+                        Rigorous technical design. Every joinery, every fixture is selected or custom-designed to ensure cohesive beauty.
+                    </p>
+</div>
+<div class="p-8 md:p-10 group hover:bg-surface-light dark:hover:bg-surface-dark transition-colors duration-500">
+<div class="w-12 h-12 mb-6 text-primary flex items-center justify-center border border-primary/30 rounded-full group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined font-thin">foundation</span>
+</div>
+<h4 class="font-display text-2xl mb-4 group-hover:translate-x-2 transition-transform duration-300">04. Realization</h4>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark leading-relaxed font-light">
+                        Overseeing construction with an artisan's eye, ensuring the built reality surpasses the imagined potential.
+                    </p>
+</div>
+</div>
+<div class="border-t border-text-muted-light/20 dark:border-text-muted-dark/20"></div>
+</div>
+</section>
+<div class="w-full h-[70vh] parallax-bg relative flex items-center justify-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB4a6vIv7olEFwOCg_raEMhH-s4AztEeXdECsUWVd4N6AZTO4G6Xldm32V-Wpo5yvbkQ8Zh1618lcg5kq7sVOypR9zYbGq-cNj7oZCfIs4bVmoOGt6A3x8SZIeLXlcPh048tYYAhFRU_PR3H6SJnzWoHnrGNNqeuYoUXeSONrVgs9R3vl8z0T2aSHae8CUMIDnWo8AQBFi6VIXMgjVooRC-7rsJ89o4WD2eGu2QBms9Dj9_oCxC6R63eEQUc2wgcCyf99x2thEJVi7N');">
+<div class="absolute inset-0 bg-black/40"></div>
+<div class="relative z-10 text-center max-w-2xl px-6">
+<span class="material-symbols-outlined text-5xl text-white/80 mb-6 font-thin">spa</span>
+<p class="font-display text-4xl md:text-5xl text-white leading-tight italic">
+                "Architecture should speak of its time and place, but yearn for timelessness."
+            </p>
+<p class="text-white/80 text-xs uppercase tracking-widest mt-8 font-sans">— Frank Gehry</p>
+</div>
+</div>
+<section class="py-24 bg-surface-light dark:bg-surface-dark text-center">
+<div class="max-w-3xl mx-auto px-6">
+<h2 class="font-display text-4xl md:text-6xl text-text-main-light dark:text-text-main-dark mb-6">Start Your Journey</h2>
+<p class="text-text-muted-light dark:text-text-muted-dark mb-10 font-light">
+                Whether you are looking to build a private residence or a boutique commercial space, let's discuss how we can bring your vision to life.
+            </p>
+<a class="inline-block border border-text-main-light dark:border-text-main-dark hover:bg-primary hover:border-primary hover:text-white dark:hover:text-white px-12 py-5 text-xs uppercase tracking-[0.25em] transition-all duration-300" href="#">
+                Contact Studio
+            </a>
+</div>
+</section>
+<footer class="bg-background-dark text-text-main-dark pt-24 pb-12 px-8 border-t border-white/5">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+<div class="md:col-span-1">
+<h2 class="font-display text-4xl mb-6">Duna</h2>
+<p class="text-text-muted-dark text-sm leading-relaxed mb-6">
+                    Architects of silence, space, and light. crafting luxury environments for the discerning few.
+                </p>
+<div class="flex space-x-4">
+<a class="text-text-muted-dark hover:text-primary transition-colors" href="#">IG</a>
+<a class="text-text-muted-dark hover:text-primary transition-colors" href="#">LI</a>
+<a class="text-text-muted-dark hover:text-primary transition-colors" href="#">PI</a>
+</div>
+</div>
+<div class="md:col-span-1">
+<h4 class="text-xs font-bold uppercase tracking-widest text-white mb-6">Studio</h4>
+<ul class="space-y-4 text-sm text-text-muted-dark">
+<li><a class="hover:text-white transition-colors" href="#">Profile</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Team</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Awards</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="text-xs font-bold uppercase tracking-widest text-white mb-6">Contact</h4>
+<ul class="space-y-4 text-sm text-text-muted-dark">
+<li>hello@duna-architects.com</li>
+<li>+1 (555) 092-3312</li>
+<li class="pt-4">
+                        1200 Pacific Coast Hwy<br/>
+                        Malibu, CA 90265
+                    </li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="text-xs font-bold uppercase tracking-widest text-white mb-6">Newsletter</h4>
+<form class="flex flex-col space-y-4">
+<input class="bg-transparent border-b border-white/20 pb-2 text-white focus:outline-none focus:border-primary placeholder-text-muted-dark text-sm" placeholder="Email Address" type="email"/>
+<button class="text-left text-xs uppercase tracking-widest hover:text-primary transition-colors pt-2" type="submit">Subscribe</button>
+</form>
+</div>
+</div>
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 text-xs text-text-muted-dark uppercase tracking-wider">
+<p>© 2024 Duna Architects. All Rights Reserved.</p>
+<div class="flex space-x-8 mt-4 md:mt-0">
+<a class="hover:text-white" href="#">Privacy</a>
+<a class="hover:text-white" href="#">Terms</a>
+</div>
+</div>
+</footer>
+<script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+        // Check for saved user preference, if any, on load of the website
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            htmlElement.classList.add('dark');
+        } else {
+            htmlElement.classList.remove('dark');
+        }
+        themeToggleBtn.addEventListener('click', function() {
+            // if set via local storage previously
+            if (localStorage.getItem('color-theme')) {
+                if (localStorage.getItem('color-theme') === 'light') {
+                    htmlElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                } else {
+                    htmlElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                }
+            // if NOT set via local storage previously
+            } else {
+                if (htmlElement.classList.contains('dark')) {
+                    htmlElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                } else {
+                    htmlElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                }
+            }
+        });
+    </script>
+
+</body></html>

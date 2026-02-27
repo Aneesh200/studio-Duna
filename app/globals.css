@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9f7f2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dcd8d0;
+  border-radius: 3px;
+}
+
+.sticky-wrapper {
+  position: relative;
+  height: 300vh;
+}
+
+.sticky-content {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zoom-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform;
+}
+
+.arch-mask {
+  position: relative;
+  overflow: hidden;
+  transform-origin: center center;
+  will-change: width, height, border-radius;
+  transition: all 0.1s linear;
+}
+
+.parallax-section {
+  display: flex;
+  gap: 4rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 2rem;
+  scrollbar-width: none;
+}
+
+.parallax-section::-webkit-scrollbar {
+  display: none;
+}
+
+.parallax-item {
+  scroll-snap-align: start;
+  flex: 0 0 80vw;
+  position: relative;
+}
+
+.reveal-text {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.2s ease, transform 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.reveal-text.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.luxury-border-t {
+  border-top: 1px solid rgba(45, 42, 38, 0.1);
+}
+
+.image-glide {
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.group:hover .image-glide {
+  transform: scale(1.03);
+}
+
+/* Studio page - stack layout */
+.stack-container {
+  position: relative;
+}
+
+.stack-item {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.5s ease-out;
+}
+
+.stack-item:nth-child(1) {
+  z-index: 10;
+}
+.stack-item:nth-child(2) {
+  z-index: 20;
+}
+.stack-item:nth-child(3) {
+  z-index: 30;
+}
+.stack-item:nth-child(4) {
+  z-index: 40;
+}
+.stack-item:nth-child(5) {
+  z-index: 50;
+}
+.stack-item:nth-child(6) {
+  z-index: 60;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+}
+
+.image-portal {
+  clip-path: inset(0 0 0 0);
+  transition:
+    clip-path 0.8s cubic-bezier(0.65, 0, 0.35, 1),
+    transform 0.8s ease-out;
+}
+
+.stack-item:hover .image-portal {
+  transform: scale(0.98);
+}
