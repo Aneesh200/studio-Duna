@@ -136,7 +136,7 @@ function ProjectCard({
   if (project.layout === "card-right") {
     return (
       <article
-        className={`stack-item ${project.bgColor} group`}
+        className={`stack-item ${project.bgColor} dark:bg-dark-bg group`}
         style={{ zIndex: (index + 1) * 10 }}
       >
         <div className="w-full max-w-[1600px] h-full mx-auto px-4 md:px-12 py-12 md:py-24 flex flex-col md:flex-row items-center justify-center relative">
@@ -153,7 +153,7 @@ function ProjectCard({
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-700" />
             </div>
-            <div className="absolute -bottom-8 md:bottom-12 md:-right-12 z-30 bg-surface-light p-6 md:p-12 shadow-2xl max-w-xs md:max-w-md">
+            <div className="absolute -bottom-8 md:bottom-12 md:-right-12 z-30 bg-white p-6 md:p-12 shadow-2xl max-w-xs md:max-w-md">
               <div className="border-l-2 border-primary pl-6">
                 <span className="block font-serif italic text-text-muted text-lg mb-2">
                   {project.year} / {project.type}
@@ -182,7 +182,7 @@ function ProjectCard({
   if (project.layout === "centered") {
     return (
       <article
-        className={`stack-item ${project.bgColor} group`}
+        className={`stack-item ${project.bgColor} dark:bg-dark-bg group`}
         style={{ zIndex: (index + 1) * 10 }}
       >
         <Link href={`/projects/${project.slug}`} className="block w-full h-full">
@@ -203,7 +203,7 @@ function ProjectCard({
                   {project.title}
                 </h3>
               </div>
-              <div className="absolute bottom-0 left-0 md:-left-12 z-30 bg-surface-light p-6 md:p-10 shadow-lg max-w-xs">
+              <div className="absolute bottom-0 left-0 md:-left-12 z-30 bg-white p-6 md:p-10 shadow-lg max-w-xs">
                 <span className="block font-serif italic text-primary text-md mb-2">
                   {project.year} / {project.type}
                 </span>
@@ -222,7 +222,7 @@ function ProjectCard({
   if (project.layout === "panel-right") {
     return (
       <article
-        className={`stack-item ${project.bgColor} group`}
+        className={`stack-item ${project.bgColor} dark:bg-dark-bg group`}
         style={{ zIndex: (index + 1) * 10 }}
       >
         <Link href={`/projects/${project.slug}`} className="block w-full h-full">
@@ -238,7 +238,7 @@ function ProjectCard({
                 sizes="(max-width: 768px) 100vw, 90vw"
               />
             </div>
-            <div className="absolute top-0 right-0 md:-right-8 lg:-right-16 md:top-12 z-30 bg-white/90 backdrop-blur-sm p-8 md:p-12 w-full md:w-1/3 border-l border-primary/20">
+            <div className="absolute top-0 right-0 md:-right-8 lg:-right-16 md:top-12 z-30 bg-white/95 backdrop-blur-sm p-8 md:p-12 w-full md:w-1/3 border-l border-primary/20">
               <h3 className="font-display text-4xl md:text-5xl text-text-main mb-4">
                 Dune
                 <br />
@@ -264,7 +264,7 @@ function ProjectCard({
   if (project.layout === "minimal") {
     return (
       <article
-        className={`stack-item ${project.bgColor} group`}
+        className={`stack-item ${project.bgColor} dark:bg-dark-bg group`}
         style={{ zIndex: (index + 1) * 10 }}
       >
         <Link href={`/projects/${project.slug}`} className="block w-full h-full">
@@ -280,7 +280,7 @@ function ProjectCard({
                   sizes="(max-width: 768px) 100vw, 60vw"
                 />
               </div>
-              <div className="absolute bottom-12 right-4 md:right-auto md:left-[65%] lg:left-[60%] z-30 w-full md:w-1/3 pl-8 pr-6 py-6 md:py-8 bg-white/90 backdrop-blur-sm rounded-sm shadow-lg">
+              <div className="absolute bottom-12 right-4 md:right-auto md:left-[65%] lg:left-[60%] z-30 w-full md:w-1/3 pl-8 pr-6 py-6 md:py-8 bg-white/95 backdrop-blur-sm rounded-sm shadow-lg">
                 <h3 className="font-display text-5xl md:text-7xl text-text-main mb-2">
                   {project.title}
                 </h3>
@@ -301,7 +301,7 @@ function ProjectCard({
   if (project.layout === "overlay") {
     return (
       <article
-        className={`stack-item ${project.bgColor} group`}
+        className={`stack-item ${project.bgColor} dark:bg-dark-bg group`}
         style={{ zIndex: (index + 1) * 10 }}
       >
         <Link href={`/projects/${project.slug}`} className="block w-full h-full">
@@ -335,7 +335,7 @@ function ProjectCard({
   if (project.layout === "text-left") {
     return (
       <article
-        className={`stack-item ${project.bgColor} group`}
+        className={`stack-item ${project.bgColor} dark:bg-dark-bg group`}
         style={{ zIndex: (index + 1) * 10 }}
       >
         <div className="w-full max-w-[1600px] h-full mx-auto px-4 md:px-12 py-12 md:py-24 flex flex-col md:flex-row items-center justify-center relative">
@@ -391,24 +391,24 @@ export default function StudioContent() {
           className="opacity-0 translate-y-4 animate-fade-in-up max-w-2xl mx-auto"
           style={{ animationDuration: "1s", animationFillMode: "forwards" }}
         >
-          <p className="font-serif italic text-xl md:text-2xl text-text-muted mb-4 tracking-wide">
+          <p className="font-serif italic text-xl md:text-2xl text-text-muted dark:text-white/70 mb-4 tracking-wide">
             Vol. III — Editorial
           </p>
-          <h2 className="font-display text-6xl md:text-8xl lg:text-9xl leading-[0.85] font-light text-text-main mb-6">
+          <h2 className="font-display text-6xl md:text-8xl lg:text-9xl leading-[0.85] font-light text-text-main dark:text-white mb-6">
             The
             <br />
             Collection
           </h2>
-          <p className="text-text-muted text-lg md:text-xl font-light leading-relaxed mb-8 max-w-xl mx-auto">
+          <p className="text-text-muted dark:text-white/70 text-lg md:text-xl font-light leading-relaxed mb-8 max-w-xl mx-auto">
             A curated selection of residential, commercial, and public works—each
             a dialogue between landscape and light.
           </p>
-          <div className="w-px h-16 bg-text-main mx-auto opacity-20" />
+          <div className="w-px h-16 bg-text-main dark:bg-white/30 mx-auto opacity-20 dark:opacity-100" />
         </div>
       </section>
 
       <div className="sticky top-8 z-50 flex justify-center pt-8 md:pt-12 mb-12">
-        <div className="bg-white/90 backdrop-blur-md rounded-full px-6 py-3 shadow-sm border border-black/5">
+        <div className="bg-white/95 backdrop-blur-md rounded-full px-6 py-3 shadow-sm border border-black/5">
           <div className="flex space-x-6 text-[10px] md:text-xs uppercase tracking-[0.2em] font-medium text-text-main">
             <button
               type="button"
@@ -466,7 +466,7 @@ export default function StudioContent() {
 
       <section
         id="contact"
-        className="relative bg-background-dark text-white py-32 px-6 overflow-hidden z-[100]"
+        className="relative bg-background-dark dark:bg-dark-elevated text-white py-32 px-6 overflow-hidden z-[100]"
       >
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <Image
@@ -487,7 +487,7 @@ export default function StudioContent() {
           </h2>
           <Link
             href="/contact"
-            className="inline-block border border-white/30 px-10 py-4 text-xs uppercase tracking-[0.2em] hover:bg-white hover:text-background-dark transition-all duration-500"
+            className="inline-block border border-white/30 px-10 py-4 text-xs uppercase tracking-[0.2em] hover:bg-white hover:text-background-dark dark:hover:text-dark-bg transition-all duration-500"
           >
             Start a Project
           </Link>

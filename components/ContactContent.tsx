@@ -46,39 +46,39 @@ export default function ContactContent() {
         <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
           <RevealOnScroll className="lg:col-span-5">
             <span className="block w-12 h-[1px] bg-primary mb-8" />
-            <h3 className="font-sans text-xs tracking-[0.25em] uppercase text-text-muted mb-6">
+            <h3 className="font-sans text-xs tracking-[0.25em] uppercase text-text-muted dark:text-dark-muted mb-6">
               Get in Touch
             </h3>
-            <p className="font-display text-4xl leading-tight text-text-main mb-12">
+            <p className="font-display text-4xl leading-tight text-text-main dark:text-dark-text mb-12">
               Every great project begins with a conversation.
             </p>
             <div className="space-y-8 luxury-border-t pt-8">
               <div>
-                <span className="block text-xs uppercase tracking-widest text-text-muted mb-2">
+                <span className="block text-xs uppercase tracking-widest text-text-muted dark:text-dark-muted mb-2">
                   Email
                 </span>
                 <Link
                   href="mailto:hello@dunaarchitects.com"
-                  className="text-text-main hover:text-primary transition-colors text-lg font-light"
+                  className="text-text-main dark:text-dark-text hover:text-primary transition-colors text-lg font-light"
                 >
                   hello@dunaarchitects.com
                 </Link>
               </div>
               <div>
-                <span className="block text-xs uppercase tracking-widest text-text-muted mb-2">
+                <span className="block text-xs uppercase tracking-widest text-text-muted dark:text-dark-muted mb-2">
                   Studio
                 </span>
-                <p className="text-text-main leading-relaxed font-light">
+                <p className="text-text-main dark:text-dark-text leading-relaxed font-light">
                   Kondapur
                   <br />
                   Hyderabad
                 </p>
               </div>
               <div>
-                <span className="block text-xs uppercase tracking-widest text-text-muted mb-2">
+                <span className="block text-xs uppercase tracking-widest text-text-muted dark:text-dark-muted mb-2">
                   Inquiries
                 </span>
-                <p className="text-text-muted text-sm leading-relaxed max-w-md font-light">
+                <p className="text-text-muted dark:text-dark-muted text-sm leading-relaxed max-w-md font-light">
                   For new project inquiries, collaborations, or press, please use
                   the form or reach out directly. We typically respond within
                   48 hours.
@@ -88,8 +88,8 @@ export default function ContactContent() {
           </RevealOnScroll>
 
           <RevealOnScroll className="lg:col-span-7" style={{ transitionDelay: "0.2s" }}>
-            <div className="bg-white p-8 md:p-12 lg:p-16 shadow-[0_20px_60px_rgba(0,0,0,0.08)] border border-black/[0.06]">
-              <h3 className="font-display text-3xl md:text-4xl mb-10">
+            <div className="bg-white p-8 md:p-12 lg:p-16 shadow-[0_20px_60px_rgba(0,0,0,0.08)] dark:shadow-[0_20px_60px_rgba(0,0,0,0.4)] border border-black/[0.06]">
+              <h3 className="font-display text-3xl md:text-4xl mb-10 text-text-main">
                 Start a Project
               </h3>
               <form className="space-y-8">
@@ -136,7 +136,7 @@ export default function ContactContent() {
                     <select
                       id="project"
                       name="project"
-                      className="w-full border-b-2 border-text-muted/40 bg-eggshell/30 px-1 py-4 pr-10 text-text-main focus:outline-none focus:border-primary focus:bg-transparent transition-all duration-300 appearance-none cursor-pointer"
+                      className="w-full border-b-2 border-text-muted/40 px-1 py-4 pr-10 text-text-main focus:outline-none focus:border-primary focus:bg-transparent transition-all duration-300 appearance-none cursor-pointer"
                     >
                       <option value="">Select an option</option>
                       <option value="residential">Residential</option>
@@ -160,7 +160,7 @@ export default function ContactContent() {
                     id="message"
                     name="message"
                     rows={5}
-                    className="w-full border-2 border-text-muted/40 bg-eggshell/30 px-4 py-4 text-text-main placeholder:text-text-muted/60 focus:outline-none focus:border-primary focus:bg-transparent transition-all duration-300 resize-none rounded-sm"
+                    className="w-full border-2 border-text-muted/40 px-4 py-4 text-text-main placeholder:text-text-muted/60 focus:outline-none focus:border-primary focus:bg-transparent transition-all duration-300 resize-none rounded-sm"
                     placeholder="Tell us about your project..."
                   />
                 </div>
@@ -176,7 +176,7 @@ export default function ContactContent() {
         </div>
       </section>
 
-      <section className="bg-eggshell-dark py-24 px-6 md:px-12">
+      <section className="bg-eggshell-dark dark:bg-eggshell-dark py-24 px-6 md:px-12">
         <div className="max-w-screen-xl mx-auto text-center">
           <RevealOnScroll>
             <p className="font-sans text-xs tracking-[0.4em] uppercase text-text-muted mb-4">

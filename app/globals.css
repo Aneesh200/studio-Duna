@@ -10,9 +10,17 @@
   background: #f9f7f2;
 }
 
+.dark ::-webkit-scrollbar-track {
+  background: #0f0e0d;
+}
+
 ::-webkit-scrollbar-thumb {
   background: #dcd8d0;
   border-radius: 3px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #3a3632;
 }
 
 .sticky-wrapper {
@@ -79,6 +87,10 @@
 
 .luxury-border-t {
   border-top: 1px solid rgba(45, 42, 38, 0.1);
+}
+
+.dark .luxury-border-t {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .image-glide {

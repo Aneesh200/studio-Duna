@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="bg-eggshell text-text-main">
+    <main className="bg-eggshell dark:bg-dark-bg text-text-main dark:text-dark-text">
       <Navbar />
       <ContactContent />
       <Footer />

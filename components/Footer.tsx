@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-background-dark text-white/40 py-10 md:py-12 px-6 md:px-12 border-t border-white/5">
+    <footer className="bg-background-dark dark:bg-dark-elevated text-white/40 py-10 md:py-12 px-6 md:px-12 border-t border-white/5 dark:border-white/[0.06]">
       <div className="max-w-screen-xl mx-auto flex flex-col gap-10 md:gap-8 md:flex-row md:justify-between md:items-end">
         <div className="text-center md:text-left">
           <h2 className="font-display text-3xl text-white mb-2">DUNA</h2>

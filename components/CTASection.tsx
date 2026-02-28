@@ -6,7 +6,7 @@ const BG_IMAGE = "/images/duna-9.png";
 
 export default function CTASection() {
   return (
-    <section id="contact" className="h-[80vh] relative flex items-center justify-center bg-background-dark text-white overflow-hidden">
+    <section id="contact" className="h-[80vh] relative flex items-center justify-center bg-background-dark dark:bg-dark-elevated text-white overflow-hidden">
       <div className="absolute inset-0 opacity-40">
         <Image
           alt="Background"

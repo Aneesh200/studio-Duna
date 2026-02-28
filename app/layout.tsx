@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import ThemeProvider from "@/components/ThemeProvider";
 
 export const metadata: Metadata = {
   title: "Duna Architects | Cinematic Entry",
@@ -12,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -29,8 +30,8 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-eggshell text-text-main font-sans overflow-x-hidden antialiased selection:bg-primary selection:text-white">
-        {children}
+      <body className="bg-eggshell dark:bg-dark-bg text-text-main dark:text-dark-text font-sans overflow-x-hidden antialiased selection:bg-primary selection:text-white dark:selection:text-dark-bg transition-colors duration-500">
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

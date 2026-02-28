@@ -81,20 +81,20 @@ export default function AboutContent() {
         </div>
       </header>
 
-      <section className="py-24 md:py-32 px-6 md:px-12 bg-eggshell">
+      <section className="py-24 md:py-32 px-6 md:px-12 bg-eggshell dark:bg-dark-bg">
         <div className="max-w-[1400px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-24">
             <div className="md:col-span-4 lg:col-span-3">
               <span className="inline-block w-16 h-[1px] bg-primary mb-6" />
-              <h2 className="font-display text-4xl md:text-5xl text-text-main mb-8 leading-tight">
+              <h2 className="font-display text-4xl md:text-5xl text-text-main dark:text-dark-text mb-8 leading-tight">
                 Form, Emotion,
                 <br />
                 Timeless Aesthetics.
               </h2>
             </div>
-            <div className="md:col-span-8 lg:col-span-6 space-y-8 text-lg md:text-xl font-light leading-relaxed text-text-muted">
+            <div className="md:col-span-8 lg:col-span-6 space-y-8 text-lg md:text-xl font-light leading-relaxed text-text-muted dark:text-dark-muted">
               <p>
-                <span className="text-text-main font-normal">
+                <span className="text-text-main dark:text-dark-text font-normal">
                   Duna was born from a singular obsession:
                 </span>{" "}
                 to create spaces that silence the noise of the world. We believe
@@ -126,7 +126,7 @@ export default function AboutContent() {
                   sizes="(max-width: 1024px) 100vw, 25vw"
                 />
               </div>
-              <p className="mt-4 text-xs uppercase tracking-widest text-text-muted text-right">
+              <p className="mt-4 text-xs uppercase tracking-widest text-text-muted dark:text-dark-muted text-right">
                 Texture & Light Study No. 4
               </p>
             </div>
@@ -238,7 +238,7 @@ export default function AboutContent() {
           </p>
           <Link
             href="/contact"
-            className="inline-block border border-text-main hover:bg-primary hover:border-primary hover:text-white px-12 py-5 text-xs uppercase tracking-[0.25em] transition-all duration-300"
+            className="inline-block border-2 border-text-main text-text-main hover:bg-primary hover:border-primary hover:text-white px-12 py-5 text-xs uppercase tracking-[0.25em] font-medium transition-all duration-300"
           >
             Contact Studio
           </Link>

@@ -17,6 +17,13 @@ const config: Config = {
         "text-main": "#2d2a26",
         "text-muted": "#6b655f",
         "surface-light": "#ffffff",
+        // Dark theme palette
+        "dark-bg": "#0f0e0d",
+        "dark-surface": "#161412",
+        "dark-elevated": "#1c1a18",
+        "dark-border": "rgba(255,255,255,0.08)",
+        "dark-text": "#e8e6e1",
+        "dark-muted": "#9a948c",
       },
       spacing: {
         "128": "32rem",

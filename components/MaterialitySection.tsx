@@ -7,11 +7,11 @@ const DECOR_IMAGE = "/images/duna-1.png";
 
 export default function MaterialitySection() {
   return (
-    <section className="py-32 bg-eggshell relative overflow-hidden">
+    <section className="py-32 bg-eggshell dark:bg-dark-bg relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
         <RevealOnScroll className="relative z-10">
-          <div className="bg-white p-12 md:p-16 shadow-[0_20px_50px_rgba(0,0,0,0.05)]">
-            <h3 className="font-display text-5xl mb-6">Materiality & Form</h3>
+          <div className="bg-white p-12 md:p-16 shadow-[0_20px_50px_rgba(0,0,0,0.05)] dark:shadow-[0_20px_60px_rgba(0,0,0,0.4)]">
+            <h3 className="font-display text-5xl mb-6 text-text-main">Materiality & Form</h3>
             <p className="text-text-muted font-light leading-relaxed">
               We source rare stones and sustainable timbers, crafting textures
               that age beautifully with time. Our approach to materiality is one
@@ -47,7 +47,7 @@ export default function MaterialitySection() {
               alt="Architecture Detail"
               src={ARCH_IMAGE}
               fill
-              className="object-cover shadow-2xl border-8 border-eggshell"
+              className="object-cover shadow-2xl border-8 border-eggshell dark:border-white"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>

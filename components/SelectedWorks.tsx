@@ -26,7 +26,7 @@ export default function SelectedWorks() {
   };
 
   return (
-    <section className="bg-eggshell-dark py-32 overflow-hidden">
+    <section className="bg-eggshell-dark dark:bg-eggshell-dark py-32 overflow-hidden">
       <div className="px-6 md:px-12 mb-16 flex justify-between items-end">
         <div>
           <h2 className="font-display text-6xl md:text-8xl text-text-main mb-4">

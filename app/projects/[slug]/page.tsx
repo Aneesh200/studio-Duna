@@ -30,7 +30,7 @@ export default async function ProjectPage({ params }: Props) {
   if (!project) notFound();
 
   return (
-    <main className="bg-eggshell text-text-main">
+    <main className="bg-eggshell dark:bg-dark-bg text-text-main dark:text-dark-text">
       <Navbar />
       <article>
         <header className="relative h-[70vh] w-full overflow-hidden">
@@ -103,7 +103,7 @@ export default async function ProjectPage({ params }: Props) {
           </div>
         </section>
 
-        <section className="py-20 bg-eggshell-dark">
+        <section className="py-20 bg-eggshell-dark dark:bg-eggshell-dark">
           <div className="max-w-3xl mx-auto px-6 text-center">
             <h2 className="font-display text-4xl md:text-5xl text-text-main mb-6">
               Start Your Project

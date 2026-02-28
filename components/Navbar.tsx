@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ThemeToggle from "./ThemeToggle";
 
 const NavLink = ({
   href,
@@ -77,7 +78,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed w-full z-50 top-0 left-0 px-6 md:px-16 flex justify-between items-center transition-all duration-700 bg-eggshell/95 backdrop-blur-md text-text-main shadow-sm border-b border-black/5 ${
+        className={`fixed w-full z-50 top-0 left-0 px-6 md:px-16 flex justify-between items-center transition-all duration-700 bg-eggshell/95 dark:bg-dark-bg/95 backdrop-blur-md text-text-main dark:text-dark-text shadow-sm border-b border-black/5 dark:border-white/5 ${
           scrolled || menuOpen ? "py-4" : "py-6 md:py-8"
         }`}
       >
@@ -97,7 +98,8 @@ export default function Navbar() {
             Duna
           </h1>
         </Link>
-        <div className="flex items-center space-x-6 md:space-x-8">
+        <div className="flex items-center gap-4 md:gap-6">
+          <ThemeToggle />
           <span className="hidden md:block">
             <NavLink href="/contact" active={pathname === "/contact"}>
               Contact
@@ -146,11 +148,11 @@ export default function Navbar() {
           onClick={() => setMenuOpen(false)}
         />
         <div
-          className={`absolute top-0 right-0 h-full w-full max-w-sm bg-eggshell shadow-xl pt-24 px-8 pb-8 transition-transform duration-300 ease-out ${
+          className={`absolute top-0 right-0 h-full w-full max-w-sm bg-eggshell dark:bg-dark-surface shadow-xl pt-24 px-8 pb-8 transition-transform duration-300 ease-out ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <nav className="flex flex-col text-text-main">
+          <nav className="flex flex-col text-text-main dark:text-dark-text">
             {NAV_LINKS.map((link) => (
               <NavLink
                 key={link.href}
